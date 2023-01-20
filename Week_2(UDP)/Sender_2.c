@@ -1,3 +1,5 @@
+//CLIENT UDP
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h>
@@ -70,7 +72,7 @@ int main()
 		printf("\n\n%s\n\n",buff2);
 		printf("\n\nSuccess in receiving the data\n\n");
 
-		if(strcmp(buff1, "byet") == 0)
+		if(strcmp(buff1, "bye") == 0)
     		{
 			ret3 = sendto(sockfd, "bye", strlen("bye"), 0, (const struct sockaddr *)(&dest), sizeof(dest));
 
